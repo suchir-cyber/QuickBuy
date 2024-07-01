@@ -1,5 +1,6 @@
 from django.contrib import admin
-from ecomm_app.models import Contact
+from ecomm_app.models import Contact,Product
 # Register your models here.
 
 admin.site.register(Contact)
+admin.site.register(Product)
