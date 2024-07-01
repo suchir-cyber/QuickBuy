@@ -5,36 +5,10 @@
 {% endblock title %}
 
 {% block content %}
-    {% comment %} <h3>Welcome to <strong>QuickBuy</strong></h3>
+     <h3>Welcome to <strong>QuickBuy</strong></h3>
     <h1>We're Creative Agency</h1>
     <h2>We are team of talented designers making websites with Bootstrap</h2>
-    <a href="#about" class="btn-get-started scrollto">Shop Now</a> {% endcomment %}
-    <div class="card bg-light p-5">
-        <h3 class="text-dark">SignUp</h3>
-        <form action="/auth/signup/" method="POST">
-            {% csrf_token %}
-            <br>
-            <label for="email">Email</label>
-            <div class="form-group">
-                <input type="email" class="form-control p-2" id="email" name="email" required>
-            </div>
-            <label for="email">Password</label>
-            <div class="form-group">
-                <input type="password" class="form-control p-2" id="pass1" name="pass1" required>
-            </div>
-            <label for="email">Confirm Password</label>
-            <div class="form-group">
-                <input type="password" class="form-control p-2" id="pass2" name="pass2" required>
-            </div>
-            <br>
-            <button type="submit" class="btn btn-dark">SignIn</button>
-            <br>
-            Already a user?<a href="/auth/login/">Login</a>
-            <br>
-        </form>
-    </div>
-        
-
+    <a href="#about" class="btn-get-started scrollto">Shop Now</a> 
 {% endblock content %}
 
 {% block body %}

@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
+from django.contrib import messages
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -84,6 +85,14 @@ DATABASES = {
 }
 
 
+#email verification
+EMAIL_HOST = 'smtpout.secureserver.net'
+EMAIL_HOST_USER = 'pandula.20214287@mnnit.ac.in'
+EMAIL_HOST_PASSWORD = 'ps152004123'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
@@ -128,3 +137,7 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MESSAGES_TAGS = {
+    messages.ERROR : 'danger'
+}
