@@ -56,7 +56,6 @@ def handlelogin(request):
 
         if myuser is not None:
             login(request,myuser)
-            messages.success(request,"Login Success")
             return redirect('/')
 
         else:
@@ -66,6 +65,8 @@ def handlelogin(request):
     return render(request,'login.html')   
 
 def handlelogout(request):
+    logout(request)
+    messages.info(request,"logout success")
     return redirect('/auth/login') 
 
 

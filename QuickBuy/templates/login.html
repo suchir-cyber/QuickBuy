@@ -10,10 +10,10 @@
 
     <div class="card bg-light p-5">
         {% for message in messages %}
-                <div class="alert alert-{{message.tags}}" alert-dimmisible fade show" role="alert">
-                    <strong>{{message}}</strong>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
+        <div class="alert alert-{{message.tags}}" alert-dimmisible fade show" role="alert">
+            <strong>{{message}}</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
         {% endfor %}
         <h3 class="text-dark">Login</h3>
         <form action="/auth/login/" method="POST">
