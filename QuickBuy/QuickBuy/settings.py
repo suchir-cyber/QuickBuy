@@ -144,3 +144,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MESSAGES_TAGS = {
     messages.ERROR : 'danger'
 }
+
+
+razor_pay_key_id = 'rzp_test_EOdNc93CMhhHk7'
+key_secret = 'KoTdsKakAW73hoDO3hURnC3v'
