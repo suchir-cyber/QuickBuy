@@ -87,8 +87,8 @@ DATABASES = {
 
 #email verification
 EMAIL_HOST = 'smtpout.secureserver.net'
-EMAIL_HOST_USER = 'pandula.20214287@mnnit.ac.in'
-EMAIL_HOST_PASSWORD = 'ps152004123'
+EMAIL_HOST_USER = '#####'
+EMAIL_HOST_PASSWORD = '#######'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
